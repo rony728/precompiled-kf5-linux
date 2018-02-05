@@ -8,7 +8,7 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - sourceline: 'http://ppa.launchpad.net/beineri/opt-qt592-xenial/ubuntu'
+      - sourceline: 'ppa: beineri / opt-qt593-xenial'
     packages:
       - qt59base
       - qt59script
