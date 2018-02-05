@@ -10,12 +10,12 @@ addons:
       - ubuntu-toolchain-r-test
       - sourceline: 'ppa:beineri/opt-qt592-xenial'
     packages:
-      - qt57base
-      - qt57script
-      - qt57declarative
-      - qt57tools
-      - qt57x11extras
-      - qt57svg
+      - qt59base
+      - qt59script
+      - qt59declarative
+      - qt59tools
+      - qt59x11extras
+      - qt59svg
       - ninja-build
       - libxcb-keysyms1-dev
       - libxml2-utils
@@ -45,7 +45,7 @@ branches:
 
     
 script:
-  - source /opt/qt57/bin/qt57-env.sh
+  - source /opt/qt59/bin/qt59-env.sh
 #  - ./build_frameworks.sh -i ~/kf5-debug -t Debug -g Ninja -o ~/kf5-gcc-linux64-debug.tar.xz
   - ./build_frameworks.sh -i ~/kf5-release -t Release -g Ninja -o ~/kf5-gcc-linux64-release.tar.xz -a "-DCMAKE_CXX_COMPILER=g++-6"
 
