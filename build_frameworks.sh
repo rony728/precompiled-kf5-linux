@@ -3,7 +3,7 @@
 set -e
 
 usage() {
-	echo "Usage: build_frameworks.sh [ -t Release|Debug  ]] [ -g <CMake Generator, like Ninja or Unix Makefiles ] [ -v version of KF5 to install, example 5.33.0 ] -i /path/to/install [ -o path/to/tarball ] [ -a Extra CMake args ]"
+	echo "Usage: build_frameworks.sh [ -t Release|Debug  ]] [ -g <CMake Generator, like Ninja or Unix Makefiles ] [ -v version of KF5 to install, example 5.41.0 ] -i /path/to/install [ -o path/to/tarball ] [ -a Extra CMake args ]"
 	exit 1
 }
 
@@ -11,7 +11,7 @@ usage() {
 buildType=Debug
 generator="Unix Makefiles"
 installDir=""
-kf5Version=5.42.0
+kf5Version=5.41.0
 tarballPath=""
 extraCmakeArgs=""
 
