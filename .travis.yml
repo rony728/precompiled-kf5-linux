@@ -8,14 +8,14 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - sourceline: 'ppa:beineri/opt-qt562-trusty'
+      - sourceline: 'ppa:beineri/opt-qt572-trusty'
     packages:
-      - qt56base
-      - qt56script
-      - qt56declarative
-      - qt56tools
-      - qt56x11extras
-      - qt56svg
+      - qt57base
+      - qt57script
+      - qt57declarative
+      - qt57tools
+      - qt57x11extras
+      - qt57svg
       - ninja-build
       - libxcb-keysyms1-dev
       - libxml2-utils
@@ -45,7 +45,7 @@ branches:
 
     
 script:
-  - source /opt/qt56/bin/qt56-env.sh
+  - source /opt/qt57/bin/qt57-env.sh
 #  - ./build_frameworks.sh -i ~/kf5-debug -t Debug -g Ninja -o ~/kf5-gcc-linux64-debug.tar.xz
   - ./build_frameworks.sh -i ~/kf5-release -t Release -g Ninja -o ~/kf5-gcc-linux64-release.tar.xz -a "-DCMAKE_CXX_COMPILER=g++-6"
 
