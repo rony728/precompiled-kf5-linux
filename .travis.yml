@@ -2,8 +2,8 @@ language: cpp
 sudo: required
 os: linux
 dist: trusty
-notifications:
-email:false
+#notifications:
+#email:false
 
 
 addons:
